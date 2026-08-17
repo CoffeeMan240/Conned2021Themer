@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <AssemblyName>com.coffee.recconned.conned2021themer</AssemblyName>
+        <Product>Themer for 2021 RRUI flows</Product>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <RestoreAdditionalProjectSources>
+            https://api.nuget.org/v3/index.json;
+            https://nuget.bepinex.dev/v3/index.json;
+            https://nuget.samboy.dev/v3/index.json
+        </RestoreAdditionalProjectSources>
+        <RootNamespace>Conned2021Themer</RootNamespace>
+        <PackageId>com.coffee.recconned.conned2021themer</PackageId>
+        <Company>coffee240</Company>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile"/>
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2Cppmscorlib">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppSystem">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\Il2CppSystem.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppSystem.Runtime">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\Il2CppSystem.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="RecRoom.Datastructures.Runtime">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\RecRoom.Datastructures.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="RecRoom.Minijson.Runtime">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\RecRoom.Minijson.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\UnityEngine.JSONSerializeModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UI">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\UnityEngine.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule">
+        <HintPath>..\..\..\Desktop\C-Based Junk\Homebrewed RecConned\BepInEx\interop\UnityEngine.UIModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
